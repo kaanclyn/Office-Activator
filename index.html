@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Office Activation Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <h1>Office Activation Guide</h1>
+
+  <div class="guide-container">
+    <div class="step active">
+      <div class="step-icon">1</div>
+      <div class="step-text">
+        <h3>Step 1: Download the Application</h3>
+        <p>First, click the download button below to download the Office activation application.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">2</div>
+      <div class="step-text">
+        <h3>Step 2: Download Microsoft Office 2019</h3>
+        <p>Download and install Microsoft Office 2019 from any source.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">3</div>
+      <div class="step-text">
+        <h3>Step 3: Change the Txt File Extension</h3>
+        <p>To run the application, select all files with Ctrl + Shift + S and save them as "office.bat".</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">4</div>
+      <div class="step-text">
+        <h3>Step 4: Run the Application as Administrator</h3>
+        <p>After the installation is complete, run the Office Activation application as an administrator.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">5</div>
+      <div class="step-text">
+        <h3>Step 5: Activation Complete</h3>
+        <p>Everything is ready! You can now freely use the Office applications.</p>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button class="next-button" onclick="nextStep()">Continue</button>
+    </div>
+
+  </div>
+
+  <script>
+    let currentStep = 0;
+    const steps = document.querySelectorAll('.step');
+    
+    function nextStep() {
+      if (currentStep < steps.length - 1) {
+        steps[currentStep].classList.remove('active');
+        currentStep++;
+        steps[currentStep].classList.add('active');
+      } else {
+        window.location.href = 'office.html'; 
+      }
+    }
+  </script>
+</body>
+</html>

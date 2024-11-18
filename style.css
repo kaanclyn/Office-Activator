@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background: radial-gradient(circle, #000000, #3533cd); 
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    transition: filter 0.3s ease;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffcc00;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+  }
+
+  .download-section {
+    position: relative;
+    background: rgba(50, 50, 50, 0.85); 
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8);
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
+  }
+
+  .download-section:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9);
+  }
+
+  .download-section h2 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+  }
+
+  .download-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  .download-btn {
+    background: linear-gradient(135deg, #ff6600, #ffcc00); 
+    color: #fff;
+    padding: 18px 36px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .download-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff5500, #ff9900);
+  }
+
+  .download-btn:active {
+    transform: scale(0.98);
+    background: linear-gradient(135deg, #ff4400, #ff8800);
+  }
+
+  footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ccc;
+  }
+
+  footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+@media (max-width: 768px) {
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.download-section {
+  width: 90%;
+  max-width: 600px; 
+  padding: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+  margin: 0 auto; 
+}
+
+.download-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.download-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  font-size: 1.3rem;
+  padding: 15px 30px;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+}
